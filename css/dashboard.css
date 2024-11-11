@@ -1,0 +1,207 @@
+/* Reset Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body and text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #39bac4;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    color: #39bac4;
+}
+
+/* Section Content */
+.section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Box Styles */
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* New Photo Grid */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom pada desktop */
+    gap: 30px; /* Jarak antar gambar */
+    margin-top: 20px;
+}
+
+/* Membuat gambar dalam kotak dengan ukuran 250px */
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+.col-4 img {
+    width: 250px;  /* Lebar gambar */
+    height: 250px; /* Tinggi gambar */
+    object-fit: cover; /* Memastikan gambar mengisi kotak tanpa distorsi */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.col-4 .nama, .col-4 .admin {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.col-4 .nama {
+    font-weight: bold;
+    color: #333;
+}
+
+.col-4 .admin {
+    color: #555;
+}
+
+.col-4:hover {
+    transform: translateY(-8px); /* Efek naik saat hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal saat hover */
+}
+
+.col-4:hover img {
+    transform: scale(1.1); /* Efek pembesaran gambar saat hover */
+}
+
+/* Search Bar */
+.search {
+    background-color: #f6f8f8;
+    padding: 20px 0;
+}
+
+.search .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+}
+
+.search input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search input[type="submit"]:hover {
+    background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+    background-color: #39bac4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .box {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada ponsel besar */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        grid-template-columns: 1fr; /* 1 kolom pada ponsel kecil */
+    }
+}

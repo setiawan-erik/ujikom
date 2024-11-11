@@ -1,0 +1,87 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background for the login page */
+#bg-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5dddee;
+	background-image: url('../img/pp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Container for login box */
+.box-login {
+    background-color: #528f93;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Title for login */
+.box-login h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-control {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-control:focus {
+    border-color: #1df8f8;
+    outline: none;
+}
+
+/* Submit button styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #010808;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #15bfc5;
+}
+
+/* Styling for the link to registration page */
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+p a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #388e3c;
+}

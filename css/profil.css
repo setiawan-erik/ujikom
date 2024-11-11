@@ -1,0 +1,165 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+    
+    
+}
+
+/* Header */
+header {
+    background-color: #39bac4;
+    color: #fff;
+    padding: 15px 0;
+    
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    color: #fdfdfd;
+}
+
+/* Main content section */
+.section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c0605;
+}
+
+/* Form inputs: Placeholder */
+input::placeholder {
+    color: #bbb;
+}
+
+/* Alert messages */
+script {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #faf6f5;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #39bac4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Container class to maintain consistency in width */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        margin-top: 15px;
+    }
+
+    header ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section .container {
+        width: 90%;
+    }
+}

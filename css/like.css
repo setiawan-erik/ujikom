@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.like-container {
+    text-align: center;
+}
+
+.like-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #007B8F;
+}
+
+.like-icon {
+    margin-right: 8px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.liked .like-icon {
+    transform: scale(1.3);
+}
+
+.liked {
+    background-color: #ff6961;
+}
